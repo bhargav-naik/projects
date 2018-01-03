@@ -1,8 +1,8 @@
 FlIPKART PROJECTS
 ML workflow orchestration : Project aims to orchestrate the complete lifecycle of collecting labeled data to re-training machine learning models 
-Responsible for requirements gathering, high level design, low level design
-Leading development effort and integration with other systems
-Planning of release milestones and onboarding first machine learning model
+- Responsible for requirements gathering, high level design, low level design
+- Leading development effort and integration with other systems
+- Planning of release milestones and onboarding first machine learning model
 
 Feature Meta-repository : Project aims to create system where are Data Scientist can configure the call graph to procure features needed for machine learning model
 Mentoring junior developer to evaluate different solutions
