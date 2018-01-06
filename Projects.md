@@ -4,33 +4,6 @@
 - Leading development effort and integration with other systems
 - Planning of release milestones and onboarding first machine learning model
 
-#### Feature Meta-repository : Project aims to create system where are Data Scientist can configure the call graph to procure features needed for machine learning model
-- Mentoring junior developer to evaluate different solutions
-- Review of High level design, low level design, development milestones
-- Responsible for infra setup (Redis and Hbase) for TNS team
-
-#### Hadoop alerting and monitoring : Aim of the project was to make the alerting and monitoring robust such that any unhealthy process in hadoop cluster is surfaced and corrective measures can be taken immediately
-- Designed the solution using nagios_procs plugin which publishes process health status
-- Debian packaging of the solution and deployment on hadoop cluster using ansible
-- Created graphs, alerts using Flipkart alerting monitoring framework
-
-#### CICD pipeline for web-services : Aim of this project was to remove manual intervention in deployment lifecycle and reduce time to production for any newly developed code
-- Evaluation of different approaches ansible, jenkins, in-house deployment service
-- Development/testing of robust deployment template which enabled one click deployment
-- Gave a talk on onboarding and debugging issues with deployment
-- Impact - Manual intervention completely eliminated in deployment process
-- We have 5 microservices, 20 boxes running in this setup
-- Guided User Service team which maintains 40 node cluster of microservice to onboard to the solution
-
-
-#### Framework for REST services and Audit logging : Aim of this project was to create framework which enables async audit logging, integration with flipkart alerting & monitoring framework, meets Service Level Agreement (SLA) of 100ms response time for REST Endpoints
-- Wrote a wrapper for IO calls using Netflix Hystrix  which is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable
-- Integrated with multiple REST services for the first use case
-- Developed Kafka consumers to ingest audit data is audit store
-- Performance testing to meet the Service Level Agreement (SLA) requirements 100ms response time with 15K QPS
-- Created scripted dashboard for monitoring the web services
-- Wrote parameterized scripts for setting up the alerts for all future use cases
-
 #### Disable "Cash On delivery" payment option : Aim of this project was to identify the fraudulent users to disable "Cash On delivery" payment option on orders.
 - Collaboration with the data science team to understand feature definition
 - Generation of one time feature dump for training the machine learning models
@@ -47,11 +20,6 @@
 - Development of clustering approach using Hive queries and Spark GraphX
 - Presented the solution in Flipkart Spotlight Event
 
-#### Installation of Hadoop cluster : Deploying dedicated hadoop cluster to execute Hive/spark jobs for crunching TBs of data for fraud detection
-- Evaluation of the machine types for setting up different services of hadoop cluster
-- Procuring required machines from Flipkart Internal Cloud
-- Setting up all the Hadoop services using wrappers written for Hortonworks Ambari
-
 #### Pricing abuse detection : Aim of the project was to identify and blacklist the fake products which had hiked up maximum retail price (mrp) and lucrative discounts to dupe the customers
 - Collaboration with the product and analytics team to understand the problem
 - Proposed a solution with rules at different granularity in hierarchy of product taxonomy
@@ -62,13 +30,39 @@
 - Contributed to re-arch discussions
 - Contributed to the development of booking microservice which could handle upto 1 million bookings per day
 
-#### Ola Auto : Aim of this project was to develop an alternate booking model in which the booking is broadcasted to multiple drivers and one of the drivers who accept the booking is chosen based on set of criterias
-- Part of 3 member team which implemented and maintained the end-to-end system
-- Primary contributor in the development of alternate booking model for Ola auto
+#### Framework for REST services and Audit logging : Aim of this project was to create framework which enables async audit logging, integration with flipkart alerting & monitoring framework, meets Service Level Agreement (SLA) of 100ms response time for REST Endpoints
+- Wrote a wrapper for IO calls using Netflix Hystrix  which is a latency and fault tolerance library designed to isolate points of access to remote systems, services and 3rd party libraries, stop cascading failure and enable resilience in complex distributed systems where failure is inevitable
+- Integrated with multiple REST services for the first use case
+- Developed Kafka consumers to ingest audit data is audit store
+- Performance testing to meet the Service Level Agreement (SLA) requirements 100ms response time with 15K QPS
+- Created scripted dashboard for monitoring the web services
+- Wrote parameterized scripts for setting up the alerts for all future use cases
+
+#### Installation of Hadoop cluster : Deploying dedicated hadoop cluster to execute Hive/spark jobs for crunching TBs of data for fraud detection
+- Evaluation of the machine types for setting up different services of hadoop cluster
+- Procuring required machines from Flipkart Internal Cloud
+- Setting up all the Hadoop services using wrappers written for Hortonworks Ambari
+
+#### Hadoop alerting and monitoring : Aim of the project was to make the alerting and monitoring robust such that any unhealthy process in hadoop cluster is surfaced and corrective measures can be taken immediately
+- Designed the solution using nagios_procs plugin which publishes process health status
+- Debian packaging of the solution and deployment on hadoop cluster using ansible
+- Created graphs, alerts using Flipkart alerting monitoring framework
+
+#### CICD pipeline for web-services : Aim of this project was to remove manual intervention in deployment lifecycle and reduce time to production for any newly developed code
+- Evaluation of different approaches ansible, jenkins, in-house deployment service
+- Development/testing of robust deployment template which enabled one click deployment
+- Gave a talk on onboarding and debugging issues with deployment
+- Impact - Manual intervention completely eliminated in deployment process
+- We have 5 microservices, 20 boxes running in this setup
+- Guided User Service team which maintains 40 node cluster of microservice to onboard to the solution
 
 #### Performance monitoring of Scale Out Network Attached Storage : Aim of this project was to provide unified view for monitoring health of storage clusters.
 - Developed collectors which collected CPU, Memory, Disk Usage metrics
 - Integrated collectors with the framework which ingested the metrics to OpenTsDB and aggregated at different granularity for different timespan
+
+#### Ola Auto : Aim of this project was to develop an alternate booking model in which the booking is broadcasted to multiple drivers and one of the drivers who accept the booking is chosen based on set of criterias
+- Part of 3 member team which implemented and maintained the end-to-end system
+- Primary contributor in the development of alternate booking model for Ola auto
 
 #### CDMI based object Store : Aim of this project was to build an objectstore based on CDMI specification and ecosystem products using the Object Store
 - Developed a Command Line Interface for performing file operations on CDMI store.
