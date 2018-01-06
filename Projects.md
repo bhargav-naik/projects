@@ -26,6 +26,19 @@
 - Designed and developed a rule based framework where analytics team can configure new rules and modify existing threshold
 - Debian packaging, Jenkins pipeline for build and deployment on production server
 
+#### SPF fraud detection : Aim of this project was to identify the sellers which were abusing the system and gaining a large amount of seller protection fund by submitting documents/images for same broken product.
+- Collaboration with the operations team to understand the Standard Operating Procedure (SOP) for fraud detection
+- Feature engineering to generate features needed for rule evaluation
+- Designed, developed and deployed a configurable rule based system which identifies/rejects fraud refund claims
+- 20K refund_request per week are evaluated by the system eliminating manual intervention
+- Experimented with image similarity algorithms to identify if the seller is using the same image of broken product
+
+#### SellerOnboarding fraud detection : Aim of this project was to identify the sellers who were already convicted of doing fraud on the platform and trying to onboard again providing different address etc.
+- Collaborated with User graph team to consume the account linking based on attributes
+- Collaborated with SellerOnboarding team to integrate in the onboarding process
+- Designed, developed and deployed a solution based account lining and seller profile to identify such cases
+- Flipkart had more leverage now to keep fraud seller out of the system
+
 #### Re Arch of Backend Service : Aim of this project was to come up with a set of microservices which can address a specific set of requirements (e.g. Booking Service, Billing Service, User Service, Driver Service etc) and can scale to handle 1 million bookings per day
 - Contributed to re-arch discussions
 - Contributed to the development of booking microservice which could handle upto 1 million bookings per day
